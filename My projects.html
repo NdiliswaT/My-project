@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ndiliswa Tyobeka — Junior Software Developer</title>
+  <style>
+    :root{
+      --accent: #333333; /* soft black accent */
+      --muted: #6b6b6b;
+      --bg: #ffffff;
+      --maxw: 980px;
+      --radius: 12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:#111;background-color: rgb(250, 245, 241);}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:40px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:16px}
+    .avatar{
+      width:72px;height:72px;border-radius:12px;background:linear-gradient(180deg,#f3f3f3,#e9e9e9);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)
+    }
+    h1{font-size:26px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .cta a{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--accent);text-decoration:none;color:var(--accent);font-weight:600}
+    section{margin-top:30px;padding:28px;border-radius:var(--radius);background:#fff;border:1px solid #f0f0f0;box-shadow:0 6px 20px rgba(22,22,22,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border-radius:999px;border:1px solid #eee;background:#fafafa;font-weight:600;color:var(--accent);font-size:13px}
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .card{padding:16px;border-radius:10px;border:1px solid #f1f1f1}
+    .card h3{margin:0 0 6px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    a.project-link{color:var(--accent);text-decoration:none;font-weight:600}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}header{flex-direction:column;align-items:flex-start} .cta{margin-top:12px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar">NT</div>
+        <div>
+          <h1>Ndiliswa Tyobeka</h1>
+          <p class="lead">Junior Software Engineer — Python • Flask • JavaScript • AI integration </p>
+          <p class="muted">Diploma in Software Development, Boston City Campus (2022) • Cursor AI (Udemy, 2025)</p>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="mailto:ndiliswa@icloud.com">Contact</a>
+      </div>
+    </header>
+
+    <section>
+      <div class="grid">
+        <div>
+          <h2>About</h2>
+          <p class="muted">I build practical web tools that solve real problems. I enjoy combining backend services with thoughtful UIs and have a particular interest in healthcare workflows and AI-driven productivity tools — while remaining open to any problem that benefits from reliable code and user empathy.</p>
+
+          <h2 style="margin-top:18px">Featured Projects</h2>
+          <div class="projects">
+            <div class="card">
+              <h3>Ollama Medical UI</h3>
+              <p class="muted">AI-powered medical billing assistant (Flask, Ollama, JS). Helps practice admins query tariff and cause codes quickly.</p>
+              <p><a class="project-link" href="https://github.com/NdiliswaT/Ollama-Medical-UI" target="_blank">View on GitHub →</a></p>
+            </div>
+
+            <div class="card">
+              <h3>Patient UI</h3>
+              <p class="muted">Clinical notes summariser (Flask, Vanilla JS, Firebase Firestore). Generates concise encounter summaries and stores patient records in Firestore in real-time.</p>
+              <p><a class="project-link" href="https://github.com/NdiliswaT/Patient-UI" target="_blank">View on GitHub →</a></p>
+            </div>
+
+            <div class="card">
+              <h3>First Clinical Project</h3>
+              <p class="muted">Collection of front-end and clinical UI practice projects including a timeline viewer and website recreations.</p>
+              <p><a class="project-link" href="https://github.com/NdiliswaT/First-clinical-project" target="_blank">View on GitHub →</a></p>
+            </div>
+          </div>
+
+          <h2 style="margin-top:18px">Education</h2>
+          <p class="muted"><strong>Diploma in Software Development</strong> — Boston City Campus (2022)<br>
+          <strong>Cursor AI — Build AI Tools & Apps</strong> — Udemy (2024)</p>
+        </div>
+
+        <aside>
+          <section style="margin-bottom:14px">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="chip">Python</div>
+              <div class="chip">Flask</div>
+              <div class="chip">JavaScript</div>
+              <div class="chip">HTML & CSS</div>
+              <div class="chip">Firebase Firestore</div>
+              <div class="chip">LLM Integration</div>
+              <div class="chip">Git & GitHub</div>
+              <div class="chip">Working with JSON data</div>
+              <div class="chip">Debugging</div>
+              <div class="chip">Building functional prototypes</div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Contact</h3>
+            <p class="muted">Email: ndiliswa@icloud.com</p>
+            <p class="muted">GitHub: <a href="https://github.com/NdiliswaT" class="project-link" target="_blank">github.com/NdiliswaT</a></p>
+            <p class="muted">Portfolio: <a href="http://kasidevs.co.za/ndiliswa" class="project-link" target="_blank">kasidevs.co.za/ndiliswa</a></p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      © Ndiliswa Tyobeka — Junior Software Developer
+    </footer>
+  </div>
+</body>
+</html>
