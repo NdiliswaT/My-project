@@ -13,13 +13,11 @@
       --radius: 12px;
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 
-      .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-image: url("images/myphoto.jpg");
-  background-size: cover;
-  background-position: center;
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* keeps proportions while filling the box */
+    border-radius: 12px; /* same as avatar container */
 }
       
     }
@@ -51,10 +49,11 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="avatar">
-    <img src="myphoto.jpg" alt="Profile photo">
+  <div class="avatar">
+    <img src="your-image.jpg" alt="Avatar">
 </div>
-        <div>
+
+   <div>
           <h1>Ndiliswa Tyobeka</h1>
           <p class="lead">Junior Software Engineer — Python • Flask • JavaScript • AI integration </p>
           <p class="muted">Diploma in Software Development, Boston City Campus (2022) • Cursor AI (Udemy, 2025)</p>
